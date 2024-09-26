@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotos com Botão de Fechar</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #000;
+            color: white;
+        }
+
+        img {
+            width: 300px;
+            margin: 10px;
+        }
+
+        .close-btn {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .close-btn:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="1.jpeg" alt="Foto 1">
+        <img src="2.jpeg" alt="Foto 2">
+    </div>
+    <button class="close-btn" onclick="fecharSite()">Fechar</button>
+
+    <script>
+        function fecharSite() {
+            window.open('', '_self', ''); 
+            window.close(); 
+        }
+    </script>
+</body>
+</html>
