@@ -13,8 +13,9 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-color: #fff; /* Altera a cor de fundo para branco */
-            color: black; /* Altera a cor do texto para preto */
+            background-color: #fff; /* Fundo branco */
+            color: black;
+            position: relative; /* Necessário para posicionar o texto no canto */
         }
 
         img {
@@ -24,8 +25,8 @@
 
         .close-btn {
             background-color: transparent;
-            color: black; /* Altera a cor do texto do botão para preto */
-            border: 2px solid black; /* Altera a borda do botão para preto */
+            color: black;
+            border: 2px solid black;
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
@@ -34,8 +35,30 @@
         }
 
         .close-btn:hover {
-            background-color: black; /* Muda a cor de fundo do botão ao passar o mouse */
-            color: white; /* Muda a cor do texto do botão ao passar o mouse */
+            background-color: black;
+            color: white;
+        }
+
+        /* Estilo para o texto gov.br no canto inferior esquerdo */
+        .govbr {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: Arial, sans-serif;
+        }
+
+        .govbr .g, .govbr .b {
+            color: blue; /* Azul para 'g' e 'b' */
+        }
+
+        .govbr .o, .govbr .r {
+            color: yellow; /* Amarelo para 'o' e 'r' */
+        }
+
+        .govbr .v {
+            color: green; /* Verde para 'v' */
         }
     </style>
 </head>
@@ -45,6 +68,10 @@
         <img src="1.jpeg" alt="Foto 2">
     </div>
     <button class="close-btn" onclick="fecharSite()">Fechar</button>
+
+    <div class="govbr">
+        <span class="g">g</span><span class="o">o</span><span class="v">v</span><span class="b">b</span><span class="r">r</span>
+    </div>
 
     <script>
         function fecharSite() {
