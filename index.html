@@ -13,8 +13,8 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-            background-color: #000;
-            color: white;
+            background-color: #fff; /* Altera a cor de fundo para branco */
+            color: black; /* Altera a cor do texto para preto */
         }
 
         img {
@@ -24,8 +24,8 @@
 
         .close-btn {
             background-color: transparent;
-            color: white;
-            border: 2px solid white;
+            color: black; /* Altera a cor do texto do botão para preto */
+            border: 2px solid black; /* Altera a borda do botão para preto */
             padding: 10px 20px;
             font-size: 16px;
             cursor: pointer;
@@ -34,15 +34,15 @@
         }
 
         .close-btn:hover {
-            background-color: white;
-            color: black;
+            background-color: black; /* Muda a cor de fundo do botão ao passar o mouse */
+            color: white; /* Muda a cor do texto do botão ao passar o mouse */
         }
     </style>
 </head>
 <body>
     <div>
-        <img src="1.jpeg" alt="Foto 1">
-        <img src="2.jpeg" alt="Foto 2">
+        <img src="2.jpeg" alt="Foto 1">
+        <img src="1.jpeg" alt="Foto 2">
     </div>
     <button class="close-btn" onclick="fecharSite()">Fechar</button>
 
